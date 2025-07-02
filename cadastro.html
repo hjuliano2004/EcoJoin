@@ -2,10 +2,113 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="cadastro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro de parceiros</title>
 </head>
 <body>
-    
+    <form id="cadastraParceiro">
+
+        <section class="container">
+
+        <div class="boxe">
+            <label for="nomeParceiro">nome do parceiro:</label><!--lugar-->
+            <input id="nomeParceiro" type="text" placeholder="organizacoes Tabajara" required> 
+
+        </div>
+
+        <div class="boxe">
+
+            <select>
+                <option value="eco">Ecopontos (ECO)</option>
+                <option value="coo">Cooperativas (COO)</option>
+                <option value="pev">Ponto de entrega voluntária (PEV)</option>
+            </select>
+        </div>
+
+        <div class="boxe">
+            <label for="responsavel">responsável:</label>
+            <input id="responsavel" type="text" placeholder="João..." required>
+        </div>
+
+        <div class="boxe">
+            <label for="teleforne do responsável">telefone do responsável</label>
+            <input id="teleforne" type="number" placeholder="47 998877665" required>
+        </div>
+
+        <div class="boxe">
+            <label for="email">email:</label>
+            <input id="email" type="email" placeholder="TabajaraCorp@gmail.com" required>
+        </div>
+
+        </section>
+
+        <div id="divEndereco">
+            <h3>endereço:</h3>
+            <label for="bairro">bairro:</label>
+            <input id="bairro" type="text" placeholder="Jardim Paraíso" required>
+
+            <label for="rua">rua:</label>
+            <input id="rua"    type="text" placeholder="estrada Timbé" required>
+
+            <label for="numero">numero:</label>
+            <input id="numero" type="number" placeholder="12345" required>
+        </div>
+
+        <h3>materiais aceitos</h3>
+
+        <section class="container" id="boxes">
+            <div class="boxe">
+                <label for="papel">papel:</label>
+                <input id="papel" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="plastico">plástico:</label>
+                <input id="plastico" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="vidro">vidro:</label>
+                <input id="vidro" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="metal">metal:</label>
+                <input id="metal" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="oleoCozinha">óleo de cozinha:</label>
+                <input id="oleoCozinha" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="pilhaBateria">pilhas e baterias:</label>
+                <input id="pilhaBateria" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="eletronico">eletronicos:</label>
+                <input id="eletronico" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="roupas">roupas:</label>
+                <input id="roupas" type="checkbox">
+            </div>
+
+            <div class="boxe">
+                <label for="outros">outros...:</label>
+                <input id="outros" type="checkbox">
+            </div>
+        </section>
+
+            <button type="submit" id="enviar">enviar</button>
+
+    </form>
+
+
+    <script src="cadastro.js"></script>
 </body>
 </html>
