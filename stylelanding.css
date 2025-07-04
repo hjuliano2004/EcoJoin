@@ -1,39 +1,56 @@
  body {
       font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
+      background-color: #f8f9fa;
       color: #333;
-      background-color: #f9f9f9;
     }
 
+    /* Cabeçalho */
     header {
       background-color: #00695c;
       color: white;
-      padding: 1.5rem;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
+    .logo img {
+      height: 50px;
     }
 
     nav a {
       color: white;
+      margin-left: 1rem;
       text-decoration: none;
       font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem 2rem;
+      background-color: #e0f2f1;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #004d40;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Carrossel */
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
     }
 
     section {
@@ -63,7 +80,7 @@
     }
 
     footer {
-      background-color: #004d40;
+      background-color: #1B4332;
       color: white;
       text-align: center;
       padding: 2rem;
@@ -71,9 +88,19 @@
     }
 
     footer img {
-      height: 30px;
-      margin: 0 10px;
+      height: 60px;
+      margin: 0 40px;
     }
+
+      .logos {
+    background-color: #fff;      /* fundo branco */
+    display: inline-block;       /* ajusta ao conteúdo */
+    padding: 0.5rem 1rem;        /* espaço interno */
+    border-radius: 8px;          /* cantos arredondados */
+    margin-top: 1rem;            /* separa do texto acima */
+    box-shadow: 0 2px 40px #0001; /* sombra suave opcional */
+  }
+
 
     @media (max-width: 600px) {
       nav ul {
