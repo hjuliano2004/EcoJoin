@@ -185,6 +185,44 @@ footer img {
   }
 }
 
+/* Estilo do botão dropdown */
+.dropdown-container {
+  text-align: center;
+}
+
+/* Formulário embutido */
+.form-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  background-color: #fdfdfd;
+  transition: all 0.3s ease;
+}
+
+/* Oculta o formulário por padrão */
+#formContainer {
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* Transição suave ao exibir */
+#formContainer.show {
+  display: block;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
 
 /* Responsivo */
 @media (max-width: 768px) {
