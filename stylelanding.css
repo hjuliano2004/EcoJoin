@@ -30,7 +30,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* garante que fique acima de outros elementos */
+  z-index: 1000; 
 }
 
 
@@ -50,7 +50,7 @@ nav a:hover {
   color: #c8e6c9;
 }
 
-/* Hero */
+
 .hero {
   text-align: center;
   padding: 5rem 2rem 3rem;
@@ -71,21 +71,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-/* Carrossel refinado */
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  max-height: 350px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
 
-.carousel-item img:hover {
-  transform: scale(1.01);
-}
 
 /* Seções */
 section {
@@ -113,6 +99,15 @@ ul {
   padding-left: 1.5rem;
   list-style: disc;
 }
+
+
+
+#mapa img {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+
 
 /* Rodapé */
 footer {
@@ -172,18 +167,21 @@ footer img {
   border-radius: 16px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .hero-section .text-content,
-  .hero-section .image-content {
-    text-align: center;
-  }
+/* Estilo do mapa */
+
+#mapa {
+  text-align: center;
 }
+
+.imagem-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+
 
 /* Estilo do botão dropdown */
 .dropdown-container {
@@ -222,6 +220,18 @@ footer img {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-section .text-content,
+  .hero-section .image-content {
+    text-align: center;
+  }
+}
 
 
 /* Responsivo */
