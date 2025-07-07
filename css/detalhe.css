@@ -1,0 +1,118 @@
+#detalhes{
+    display: none;
+    background-color: whitesmoke;
+    width: 40%;
+    border-radius: 30px;
+    border: 2px solid black;
+    margin:0 auto;
+    padding: 5px;
+
+    position: fixed;
+
+    top: 30%;
+
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#cards{
+    text-align: center;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: 5px;
+}
+
+.card p{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.entidade{
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+#lateral{
+    background-color: green;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 0px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+#lateral *{
+    margin-left: 10px;
+}
+
+.meio{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+#listaMateriais .material{
+    text-align: center;
+    list-style-type: none; 
+}
+
+#listaMateriais ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    gap: 5px;
+}
+
+#listaMateriais ul li{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#representante img{
+    text-align: right;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    transform: translateY(-90px);
+    float: right;
+    overflow: hidden;
+}
+
+@media (max-width: 768px){
+    .meio{
+        display: block;
+    }
+
+    #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #detalhes{
+        width: 100%;
+        top: 10px;
+    }
+
+    #representante img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 100px;
+    }
+
+    #lateral{
+   margin-left: 0px;
+}
+
+.card{
+    margin: 0px;
+}
+}
