@@ -1,11 +1,264 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Resíduos e Consumo Consciente</title>
+  <link rel="stylesheet" href="stylelanding.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
 </head>
 <body>
-    
+
+ <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="imgLand/logo_landing.png" alt="Logo EcoJoin" />
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#acoes">Ações</a>
+      <a href="#educacao">Educação</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+  </header>
+
+
+ <!-- Seção inicio-->
+<section id="inicio" class="hero-section d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-5">
+  <div class="text-content text-center text-md-start mb-4 mb-md-0">
+    <h1 class="display-5 fw-bold text-success">Por uma Joinville mais limpa</h1>
+    <p class="lead">Gestão eficiente de resíduos e consumo consciente para um futuro sustentável.</p>
+    <a href="#objetivos" class="btn btn-success mt-3 px-4 py-2 rounded-pill shadow-sm">Saiba mais</a>
+  </div>
+  <div class="image-content">
+    <img src="imgLand/b1.png" alt="Gestão de Resíduos" class="img-fluid rounded shadow-lg">
+  </div>
+</section>
+
+
+
+
+
+  <!-- Seção Objetivos -->
+  <section id="objetivos">
+    <h2>Objetivo do Projeto</h2>
+    <p>Promover a educação ambiental e incentivar a população a adotar práticas sustentáveis no dia a dia. Este projeto está alinhado com os Objetivos de Desenvolvimento Sustentável (ODS) 11 – Cidades e Comunidades Sustentáveis – e ODS 12 – Consumo e Produção Responsáveis.</p>
+  </section>
+
+  <!-- Seção Impacto -->
+  <section id="impacto">
+    <h2>Impacto</h2>
+    <article>
+      <h3>O ciclo da reciclagem explicado</h3>
+      <p>O ciclo começa na separação correta dos resíduos, passa pela coleta seletiva, triagem e transformação dos materiais em novos produtos. Cada etapa depende da participação ativa da população.</p>
+    </article>
+    <article>
+      <h3>Como sua ação individual pode transformar a cidade</h3>
+      <p>Separar corretamente o lixo, reutilizar materiais e consumir de forma consciente reduz a poluição e fortalece cooperativas locais, gerando renda e inclusão.</p>
+    </article>
+    <article>
+      <h3>Impactos da má gestão de resíduos</h3>
+      <p>Descarte incorreto causa enchentes, contaminação de solos e água, proliferação de doenças e danos ao meio ambiente. A responsabilidade é coletiva.</p>
+    </article>
+  </section>
+
+<!-- Seção Educação Ambiental -->
+  <section id="educacao">
+  <h2>Educação Ambiental</h2>
+  <article>
+    <h3>Por que aprender sobre resíduos?</h3>
+    <p>Compreender o ciclo dos resíduos e o impacto do consumo excessivo é o primeiro passo para promover uma mudança real. A educação ambiental forma cidadãos conscientes e preparados para agir com responsabilidade no planeta.</p>
+  </article>
+  <article>
+    <h3>Atividades em Escolas e Comunidades</h3>
+    <p>A plataforma EcoJoin apoia e divulga ações educativas como oficinas, visitas a cooperativas e concursos de reciclagem para crianças e jovens.</p>
+  </article>
+</section>
+
+<!-- Seção Mapa Ecopontos -->
+
+<section id="mapa">
+  <h2>Encontre um Ecoponto</h2>
+  <p>Estamos trabalhando para incluir um mapa interativo com a localização de Ecopontos, Cooperativas e PEVs em Joinville. Enquanto isso, confira a lista atualizada de parceiros cadastrados!</p>
+  <div class="imagem-container">
+    <img src="imgLand/mapa.png" alt="Mapa de Ecopontos" class="img-fluid rounded shadow mt-3" width="250px">
+  </div>
+</section>
+
+
+
+<!-- Seção Depoimentos -->
+<section id="depoimentos">
+  <h2>O que dizem sobre a EcoJoin</h2>
+  <article>
+    <p>"Depois que comecei a separar o lixo em casa, percebi o quanto produzimos sem necessidade. A EcoJoin me ajudou a enxergar isso." — <strong>Juliana, moradora do bairro Costa e Silva</strong></p>
+  </article>
+  <article>
+    <p>"A plataforma facilitou o contato com cooperativas e agora minha empresa descarta resíduos corretamente." — <strong>Marcos, empresário local</strong></p>
+  </article>
+</section>
+
+
+  <!-- Seção Ações -->
+  <section id="acoes">
+    <h2>Como participar</h2>
+    <ul>
+      <li>Doe seus recicláveis para cooperativas locais</li>
+      <li>Participe de campanhas de conscientização e eventos ambientais</li>
+      <li>Seja parceiro do projeto: empresas e ONGs são bem-vindas!</li>
+      <li>Reutilize potes e embalagens antes de descartá-los</li>
+      <li>Evite produtos descartáveis e prefira os reutilizáveis</li>
+      <li>Leve sua sacola retornável às compras</li>
+    </ul>
+
+ <!-- Botão para abrir/fechar o formulário -->
+<div class="dropdown-container text-center my-4">
+  <button id="toggleForm" class="btn btn-outline-success rounded-pill px-4 py-2">
+    Cadastrar Novo Parceiro
+  </button>
+</div>
+
+<!-- Formulário oculto -->
+<div id="formContainer" class="form-wrapper p-4" style="display: none;">
+  <form id="cadastraParceiro" class="needs-validation" novalidate>
+    <h3 class="mb-4 text-center text-success">Cadastro de Parceiros</h3>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="nomeParceiro" class="form-label">Nome do parceiro:</label>
+        <input type="text" class="form-control" id="nomeParceiro" required />
+      </div>
+      <div class="col-md-6">
+        <label for="tipoParceiro" class="form-label">Tipo:</label>
+        <select class="form-select" id="tipoParceiro">
+          <option value="eco">Ecopontos</option>
+          <option value="coo">Cooperativas</option>
+          <option value="pev">PEVs</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="responsavel" class="form-label">Responsável:</label>
+        <input type="text" class="form-control" id="responsavel" required>
+      </div>
+      <div class="col-md-6">
+        <label for="telefone" class="form-label">Telefone:</label>
+        <input type="tel" class="form-control" id="telefone" required>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+
+    <h5 class="mt-4 text-success">Endereço</h5>
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="bairro" class="form-label">Bairro:</label>
+        <input type="text" class="form-control" id="bairro" required>
+      </div>
+      <div class="col-md-5">
+        <label for="rua" class="form-label">Rua:</label>
+        <input type="text" class="form-control" id="rua" required>
+      </div>
+      <div class="col-md-3">
+        <label for="numero" class="form-label">Número:</label>
+        <input type="number" class="form-control" id="numero" required>
+      </div>
+    </div>
+
+    <h5 class="mt-4 text-success">Materiais Aceitos</h5>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="papel">
+          <label class="form-check-label" for="papel">Papel</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="plastico">
+          <label class="form-check-label" for="plastico">Plástico</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="vidro">
+          <label class="form-check-label" for="vidro">Vidro</label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="metal">
+          <label class="form-check-label" for="metal">Metal</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="oleoCozinha">
+          <label class="form-check-label" for="oleoCozinha">Óleo de cozinha</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="pilhaBateria">
+          <label class="form-check-label" for="pilhaBateria">Pilhas e baterias</label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="eletronico">
+          <label class="form-check-label" for="eletronico">Eletrônicos</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="roupas">
+          <label class="form-check-label" for="roupas">Roupas</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="outros">
+          <label class="form-check-label" for="outros">Outros</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-success px-5">Enviar</button>
+    </div>
+  </form>
+</div>
+
+
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Desenvolvido por: Emanuele Magalhães | Hallan Juliano | Gabriel Carvalho | Paula Calderaro</p>
+    <p>
+      <a href="https://brasil.un.org/pt-br/sdgs/11" target="_blank" style="color: #b2dfdb;">ODS 11</a> |
+      <a href="https://brasil.un.org/pt-br/sdgs/12" target="_blank" style="color: #b2dfdb;">ODS 12</a>
+    </p>
+    <div class="logos">
+      <a href="https://www.joinville.sc.gov.br/" target="_blank"><img src="imgLand/logo_pref_ok.jpg" alt="Prefeitura de Joinville"></a>
+      <a href="https://lab365.tech/" target="_blank"><img src="imgLand/logo_lab_ok.jpg" alt="Logo Lab365"></a>
+      <a href="https://sc.senai.br/" target="_blank"><img src="imgLand/logo_senai_ok.jpg" alt="Logo Senai"></a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  const toggleBtn = document.getElementById('toggleForm');
+  const formContainer = document.getElementById('formContainer');
+
+  toggleBtn.addEventListener('click', () => {
+    formContainer.style.display = formContainer.style.display === 'none' ? 'block' : 'none';
+    toggleBtn.textContent = formContainer.style.display === 'none'
+      ? 'Cadastrar Novo Parceiro'
+      : 'Fechar Cadastro';
+  });
+</script>
+<script src="cadastro.js"></script>
 </body>
 </html>
