@@ -81,38 +81,54 @@
     border-radius: 50px;
     width: 70px;
     height: 70px;
-    transform: translateY(-90px);
+    transform: translateY(-30px);
     float: right;
     overflow: hidden;
 }
 
-@media (max-width: 768px){
+@media (min-width:300px) and (max-width: 730px){
+    #detalhes{
+        width: 80%;
+    }
+
+    #cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #lateral{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 400px){
     .meio{
         display: block;
     }
 
     #cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     #detalhes{
         width: 100%;
-        top: 10px;
+        top: 10%;
     }
 
     #representante img{
-        width: 40px;
-        height: 40px;
+        width: 10%;
+        height: 10%;
         position: absolute;
-        top: 100px;
+        top: 10%;
     }
 
     #lateral{
-   margin-left: 0px;
-}
+    margin-left: 0px;
+    }
 
 .card{
-    margin: 0px;
+    margin: 0 auto;
 }
 }
+

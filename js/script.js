@@ -280,9 +280,6 @@ function decideLogo(entidade){//escolhe a logo que representa o vinculo da empre
             break;
         case "PEV":
         avatarVisual.src ="./logos/collection.jpeg";
-        default:
-        avatarVisual.src ="./logos/ecologicalCooperative.jpeg";
-            break;
     }
 
 }
