@@ -243,16 +243,37 @@ async function renderizarDetalhes(entidade){
     listaMateriais.appendChild(converteLista(listarCheck(entidade)));
 }
 
-
-//renderiazar(4);
-
 function descricoes(entidade){
-    telefone.innerText = entidade.telResponsavel;
-    email.innerText = entidade.emailResponsavel;
-    responsavel.innerText = entidade.responsavelParceiro;
-    parceiro.innerText = entidade.nomeParceiro;
-    bairro.innerText = `Bairro: ${entidade.bairro}`;
-    rua.innerText = `Rua: ${entidade.rua}`;
+
+    const nada = "não informado";
+
+    if(entidade.telResponsavel){
+        telefone.innerText = entidade.telResponsavel;
+    }else{telefone.innerText = nada}
+
+
+    if(entidade.emailResponsavel){
+        email.innerText = entidade.emailResponsavel;
+    }else{email.innerText = nada}
+    
+
+    if(entidade.responsavelParceiro){
+        responsavel.innerText = entidade.responsavelParceiro
+    }else{responsavel.innerText = nada}
+
+    if(entidade.nomeParceiro){
+        parceiro.innerText = entidade.nomeParceiro;
+    }else{parceiro.innerText = nada}
+
+
+    if(entidade.bairro){
+        bairro.innerText = `Bairro: ${entidade.bairro}`;
+    }else{bairro.innerText = `Bairro: ${nada}`;}
+    
+    if(entidade.rua){
+        rua.innerHTML = `Rua: ${entidade.rua} N&deg${entidade.numero}`;
+    }else{rua.innerText = `Rua: ${nada}`;}
+    
 
     dataCadastro.innerText = defineData(entidade.dataCriacao);
 }
