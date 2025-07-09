@@ -3,7 +3,7 @@ const senha = document.getElementById('senha');
 const entrar = document.getElementById('entrar');
 const formulario = document.querySelector('.formulario');
 
-function validarCampos() {
+function validarCampos(){
   const emailValido = email.value;
   const senhaValida = senha.value;
 
@@ -13,7 +13,7 @@ function validarCampos() {
     return false
   }
 
-  
+
  /** entrar.disabled = !(emailValido && senhaValida); */
 }
 
