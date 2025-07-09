@@ -223,7 +223,6 @@ function verDetalhes(id) {
 
 document.addEventListener("mousedown", function(event){
     if(detalhes.style.display === "block" && !detalhes.contains(event.target)){
-        console.log(event.target)
         detalhes.style.display = "none";
     }
 });
@@ -233,7 +232,6 @@ document.addEventListener("mousedown", function(event){
 
 async function renderizarDetalhes(entidade){
 
-    console.log(entidade);
 
     descricoes(entidade);
 
@@ -294,13 +292,13 @@ function decideLogo(entidade){//escolhe a logo que representa o vinculo da empre
 
     switch (entidade.tipoParceiro.toUpperCase()) {
         case "COO":
-        avatarVisual.src ="./logos/ecologicalCooperative.jpeg"; 
+        avatarVisual.src ="./logosAvatar/ecologicalCooperative.jpeg"; 
             break;
         case "ECO":
-        avatarVisual.src = "./logos/ecopontos.jpeg";
+        avatarVisual.src = "./logosAvatar/ecopontos.jpeg";
             break;
         case "PEV":
-        avatarVisual.src ="./logos/collection.jpeg";
+        avatarVisual.src ="./logosAvatar/collection.jpeg";
     }
 
 }
