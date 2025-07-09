@@ -4,16 +4,32 @@ const entrar = document.getElementById('entrar');
 const formulario = document.querySelector('.formulario');
 
 function validarCampos() {
-  const emailValido = email.value.trim() !== '';
-  const senhaValida = senha.value.trim() !== '';
-  entrar.disabled = !(emailValido && senhaValida);
+  const emailValido = email.value;
+  const senhaValida = senha.value;
+
+  if(emailValido && senhaValida){
+    return true;
+  }else{
+    return false
+  }
+
+  
+ /** entrar.disabled = !(emailValido && senhaValida); */
 }
 
-email.addEventListener('input', validarCampos);
-senha.addEventListener('input', validarCampos);
+/*
+email.addEventListener('input', validarCampos());
+senha.addEventListener('input', validarCampos());
+*/
 
 formulario.addEventListener('submit', function(e) {
+
   e.preventDefault();
-  localStorage.setItem('email', email.value);
-  window.location.href = 'listaParceiros.html';
+
+    if(validarCampos()){
+      localStorage.setItem('email', email.value);
+       window.location.href = "listaParceiros.html";
+    }
+
+    /**entrar.disabled = !(emailValido && senhaValida); */
 });
