@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>listagem de parceiros</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detalhe.css">
+    <title>Parceiros - Sistema de Gestão</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>🌱 Parceiros Sustentáveis</h1>
+            <p class="subtitle">Sistema de Gestão de Parceiros Ambientais</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Pesquisar por nome ou bairro..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="search-btn" onclick="pesquisarParceiros()">
+                    🔍 Pesquisar
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+
+    <!--parte do detalhamento-->
+
+    <section id="detalhes">
+
+    <section id="cards">
+
+        <div class="card">
+            <h3>parceiro</h3>
+            <p id="parceiro"></p>
+        </div>
+
+        <div class="card">
+            <h3>contatos</h3>
+            <p id="telefone"></p>
+            <p id="email"></p>
+        </div>
+
+        <div class="card">
+            <h3>Endereço</h3>
+            <p id="bairro"></p>
+            <p id="rua"></p>
+        </div>
+    </section>
+
+    <section class="meio">
+    <section id="lateral">
+        <div class="entidade">
+        <h4>Responsável:</h4>
+        <p id="responsavel"></p>
+    </div>
+
+    <div class="entidade">
+        <h4>Data de cadastro:</h4>
+        <p id="dataCadastro"></p>
+    </div>
+    </section>
+    <section id="listaMateriais"></section>
+
+    </section>
+    <figure id="representante"><img id="avatarVisual"  alt="representa avatar visual"></figure><!--imagem inserida somente com js-->
+    </section>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
